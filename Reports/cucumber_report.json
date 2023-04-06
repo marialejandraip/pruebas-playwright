@@ -1,0 +1,346 @@
+[
+  {
+    "description": "  Feature Description: Se prueba que el dictamen existe y si no existe que de una alerta para crear uno nuevo.",
+    "elements": [
+      {
+        "description": "",
+        "id": "check-a-resolution-created-and-non-existent;search-a-value-for-dictamen-of-patient-and-already-exist",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search a value for dictamen of patient and already exist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3234100726
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the form website homepage",
+            "match": {
+              "location": "steps/demo.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28390679
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I edit for '<dictamen>'",
+            "match": {
+              "location": "steps/demo.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150702437
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the search icon",
+            "match": {
+              "location": "steps/demo.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51929782
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The values as date and calification will appear",
+            "match": {
+              "location": "steps/demo.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46879053
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 294223785
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "check-a-resolution-created-and-non-existent;search-a-value-for-dictamen-of-patient-and-it-doesnt-exist",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Search a value for dictamen of patient and it doesnt exist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2580082092
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I am on the form website homepage",
+            "match": {
+              "location": "steps/demo.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19557090
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I search for <dictamen>",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click on the search icon",
+            "match": {
+              "location": "steps/demo.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "An alert will appear with a message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 278922426
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "check-a-resolution-created-and-non-existent",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Check a resolution created and non-existent",
+    "tags": [],
+    "uri": "features/check_resolution.feature"
+  },
+  {
+    "description": "  Feature description: Se crea un usuario de medico, con todos los datos necesarios para el formulario y si no se ha creado o no existe el usuario no se habilita el boton de guardar.",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-a-medical-data;search-a-value-of-dni-doctor-created-before-and-save-the-data",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Search a value of DNI doctor created before and save the data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2453549667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the form website homepage",
+            "match": {
+              "location": "steps/demo.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21947257
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I edit the '<DNI>' input from a register before doctor",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The values for the doctor will appear",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I can save the values",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 222981659
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "create-a-medical-data;search-dni-doctor-not-created-before",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Search DNI doctor not created before",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2552743186
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am on the form website homepage",
+            "match": {
+              "location": "steps/demo.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21773750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I edit DNI input",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "all the form inputs for the doctor section",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "i can save the doctor data",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the restriction message disappear",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 217961432
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-a-medical-data",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create a medical data",
+    "tags": [],
+    "uri": "features/post_consult_patient.feature"
+  }
+]
