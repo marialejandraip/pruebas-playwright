@@ -1,24 +1,34 @@
-Feature: Create a medical data
+Feature: Create a patient data
 
-  Feature description: Se crea un usuario de medico, con todos los datos necesarios para el formulario y si no se ha creado o no existe el usuario no se habilita el boton de guardar.
-  @demo
-  Scenario: Search a value of DNI doctor created before and save the data
+  Feature description: Se crea un usuario de paciente, con todos los datos necesarios para el formulario y si no se ha creado o no existe el usuario me muestra una alerta en pantalla.
+ 
+ Background: Navigation
     Given I am on the form website homepage
-    When I edit the '<DNI>' input from a register before doctor
-    Then The values for the doctor will appear
-    And I can save the values
-
-  Example:
-
 
   @demo
-  Scenario: Search DNI doctor not created before
-    Given I am on the form website homepage
-    When I edit DNI input
-    And  all the form inputs for the doctor section
-    Then i can save the doctor data
-    And the restriction message disappear
+  Scenario Outline: Adding data for the doctor form section
+    When I add to the "<InfoPatient>" form the "<ValuesForm>" 
+    Then I can click in save the data
+
+    Example:
+      |InfoPatient |ValuesForm|
+      |dni | 103134453 |
+      |firstName | 'Carlos'|
+      |secondName | 'Fernando'|
+      |lastName | 'Perez'|
+      |birthday | '2002-06-12'|
+      |department | 'Antioquia'|
+      |city | 'Aburra'|
+      |Address|'Calle Falsa 456'|
+      |ResidentDepartment | 'Antioquia'|
+      |ResidentCity | 'Aburra'|
+
+
+@demo
+  Scenario Outline: Search DNI doctor not created before
+    When I search for a "<DNI>" input patient and it doesnt exist
+    Then i can see an alert that said doesnt exist
 
   Example:
-  |dictamen |
-  |"00010"  |
+  |DNI|"1435465465"|
+
