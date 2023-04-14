@@ -2,7 +2,7 @@
 
 Este es un repositorio cuya finalidad es academica y se realizo un 101 de pruebas automatizadas usando playwright y cucumber, es un proyecto con BDD y page-object-model, probando la funcionalidad de un formulario creado en Angular y nodejs.
 
-### El repositorio del repositorio de desarrollo se encuentra [AQUI](https://github.com/marialejandraip/app)
+### El repositorio de desarrollo se encuentra [AQUI](https://github.com/marialejandraip/app)
 
 ## Primera iteracion de pruebas automatizadas
 
